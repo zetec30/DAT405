@@ -11,7 +11,7 @@ function setup() {
   //Print a message to the console - to view using Chrome:
 
 
-  createCanvas(720,400);
+  createCanvas(400,400);
 
 }
 
@@ -19,19 +19,59 @@ function setup() {
 //Rendering function
 function draw() {
   //Set a background color
-  background(200);
+  background(255, 153, 51);
   //setcolours
-  fill(204, 101, 192, 127);
-  stroke(127, 63, 120);
-  //Rectangle
-  rect(40, 120,120,40);
-  //eclipse
-  ellipse(240, 240, 80, 80);
-  //triangle
-  triangle(30, 75, 58, 20, 86, 75);
 
-  //Print a message to the console - to view using Chrome:
-  //View > Developer > Developer Tools > Console
+stroke('yellow');
+strokeWeight(4);
+line(30, 30, 370, 370);
+
+stroke('red');
+strokeWeight(4);
+line(30, 30, 370, 30 );
+
+stroke('blue');
+strokeWeight(4);
+line(30, 30, 30, 370);
+
+stroke('green');
+strokeWeight(4);
+line(370, 370, 30, 370);
+
+stroke('purple');
+strokeWeight(4);
+line(370, 30, 370, 370);
+
+stroke('orange');
+strokeWeight(4);
+line(370, 30, 30, 370);
+
+fill(255,0,255);
+ellipse(30, 30, 50, 50);
+stroke('black');
+
+strokeWeight(4);
+fill(0,0,255);
+stroke('black');
+strokeWeight(4);
+
+ellipse(370, 370, 50, 50);
+fill(153, 204, 255);
+stroke('black');
+strokeWeight(4);
+
+ellipse(370, 30, 50, 50);
+fill(255,255,255);
+stroke('black');
+strokeWeight(4);
+
+ellipse(30, 370, 50, 50);
+stroke('black');
+strokeWeight(4);
+
+
+
+
   console.log("Searching...")
   noLoop();
 }

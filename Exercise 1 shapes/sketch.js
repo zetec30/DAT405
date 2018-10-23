@@ -24,9 +24,11 @@ function draw() {
   fill(204, 101, 192, 127);
   stroke(127, 63, 120);
   //Rectangle
-rect(40, 120,120,40);
+  rect(40, 120,120,40);
   //eclipse
   ellipse(240, 240, 80, 80);
+  //triangle
+  triangle(30, 75, 58, 20, 86, 75);
 
   //Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console

@@ -18,7 +18,8 @@ function setup() {
 function draw() {
   //Set a background color
   background(0, 128, 255);
-
+  //rectangle
+  rect(width/2, height/2,50,50)
   //Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console
   console.log("Searching...")

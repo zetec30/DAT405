@@ -11,7 +11,7 @@ function setup() {
   //Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console
   console.log("Initialization: Mad House")
-  createCanvas(20,20);
+  createCanvas(500,500);
 }
 
 //Rendering function
@@ -19,55 +19,51 @@ function draw() {
   //Set a background color
   background(0, 255, 255);
   //2nd line from top
-  rect(7, 2, 0.1, 0.1);
-//rectangle top 1 down
-  rect(8, 2, 0.1, 0.1);
 
-  rect(9, 2, 0.1, 0.1);
 
-  rect(10, 2, 0.1, 0.1);
+  rect(25, 2, 15, 15);
 
-  rect(11, 2, 0.1, 0.1);
+  rect(40, 2, 15, 15);
 
-  rect(12, 2, 0.1, 0.1);
+  rect(55, 2, 15, 15);
+
+  rect(70, 2, 15, 15);
+
+  rect(85, 2, 15, 15);
+
+
 
 //3rd line from top
-  rect(6, 3, 0.1, 0.1);
+  rect(10, 17, 15, 15);
 
-  rect(7, 3, 0.1, 0.1);
+  rect(25, 17, 15, 15);
 
-  rect(8, 3, 0.1, 0.1);
+  rect(40, 17, 15, 15);
 
-  rect(9, 3, 0.1, 0.1);
+  rect(55, 17, 15, 15);
 
-  rect(10, 3, 0.1, 0.1);
+  rect(70, 17, 15, 15);
 
-  rect(11, 3, 0.1, 0.1);
+  rect(85, 17, 15, 15);
 
-  rect(12, 3, 0.1, 0.1);
+  rect(100, 17, 15, 15);
 
-  rect(13, 3, 0.1, 0.1);
+
 
 //4th line from top
-  rect(5, 4, 0.1, 0.1);
+rect(10, 32, 15, 15);
 
-  rect(6, 4, 0.1, 0.1);
+rect(25, 32, 15, 15);
 
-  rect(7, 4, 0.1, 0.1);
+rect(40, 32, 15, 15);
 
-  rect(8, 4, 0.1, 0.1);
+rect(55, 32, 15, 15);
 
-  rect(9, 4, 0.1, 0.1);
+rect(70, 32, 15, 15);
 
-  rect(10, 4, 0.1, 0.1);
+rect(85, 32, 15, 15);
 
-  rect(11, 4, 0.1, 0.1);
-
-  rect(12, 4, 0.1, 0.1);
-
-  rect(13, 4, 0.1, 0.1);
-
-  rect(14, 4, 0.1, 0.1);
+rect(100, 32, 15, 15);
 
 //5th line from top
   rect(4, 5, 0.1, 0.1);

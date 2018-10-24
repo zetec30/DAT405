@@ -11,7 +11,7 @@ function setup() {
   //Print a message to the console - to view using Chrome:
   //View > Developer > Developer Tools > Console
   console.log("Initialization: Mad House")
-  createCanvas(594,841);
+  createCanvas(20,20);
 }
 
 //Rendering function

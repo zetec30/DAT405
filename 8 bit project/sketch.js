@@ -149,6 +149,8 @@ function draw() {
   rect(15, 7, 0.1, 0.1);
 
   //8th line.
+  rect(3, 8, 0.1, 0.1);
+
   rect(4, 8, 0.1, 0.1);
 
   rect(5, 8, 0.1, 0.1);
@@ -172,6 +174,33 @@ function draw() {
   rect(14, 8, 0.1, 0.1);
 
   rect(15, 8, 0.1, 0.1);
+
+  rect(16, 8, 0.1, 0.1);
+
+  //9th line.
+  rect(4, 9, 0.1, 0.1);
+
+  rect(5, 9, 0.1, 0.1);
+
+  rect(6, 9, 0.1, 0.1);
+
+  rect(7, 9, 0.1, 0.1);
+
+  rect(8, 9, 0.1, 0.1);
+
+  rect(9, 9, 0.1, 0.1);
+
+  rect(10, 9, 0.1, 0.1);
+
+  rect(11, 9, 0.1, 0.1);
+
+  rect(12, 9, 0.1, 0.1);
+
+  rect(13, 9, 0.1, 0.1);
+
+  rect(14, 9, 0.1, 0.1);
+
+  rect(15, 9, 0.1, 0.1);
   //Print a message to the console - to view using Chrome:
   //> Developer > Developer Tools > Console
   console.log("Searching...")

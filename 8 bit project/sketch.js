@@ -18,7 +18,7 @@ function setup() {
 function draw() {
   //Set a background color
   background(0, 255, 255);
-  //rectangle top left
+  //2nd line from top
   rect(7, 2, 0.1, 0.1);
 //rectangle top 1 down
   rect(8, 2, 0.1, 0.1);
@@ -31,6 +31,7 @@ function draw() {
 
   rect(12, 2, 0.1, 0.1);
 
+//3rd line from top
   rect(6, 3, 0.1, 0.1);
 
   rect(7, 3, 0.1, 0.1);
@@ -47,6 +48,7 @@ function draw() {
 
   rect(13, 3, 0.1, 0.1);
 
+//4th line from top
   rect(5, 4, 0.1, 0.1);
 
   rect(6, 4, 0.1, 0.1);
@@ -66,6 +68,31 @@ function draw() {
   rect(13, 4, 0.1, 0.1);
 
   rect(14, 4, 0.1, 0.1);
+
+//5th line from top
+  rect(4, 5, 0.1, 0.1);
+
+  rect(5, 5, 0.1, 0.1);
+
+  rect(6, 5, 0.1, 0.1);
+
+  rect(7, 5, 0.1, 0.1);
+
+  rect(8, 5, 0.1, 0.1);
+
+  rect(9, 5, 0.1, 0.1);
+
+  rect(10, 5, 0.1, 0.1);
+
+  rect(11, 5, 0.1, 0.1);
+
+  rect(12, 5, 0.1, 0.1);
+
+  rect(13, 5, 0.1, 0.1);
+
+  rect(14, 5, 0.1, 0.1);
+
+  rect(15, 5, 0.1, 0.1);
   //Print a message to the console - to view using Chrome:
   //> Developer > Developer Tools > Console
   console.log("Searching...")

@@ -17,11 +17,57 @@ function setup() {
 //Rendering function
 function draw() {
   //Set a background color
-  background(0, 128, 255);
-  //rectangle
-  rect(width/2, height/2,50,50)
+  background(0, 255, 255);
+  //rectangle top left
+  rect(7, 2, 0.1, 0.1);
+//rectangle top 1 down
+  rect(8, 2, 0.1, 0.1);
+
+  rect(9, 2, 0.1, 0.1);
+
+  rect(10, 2, 0.1, 0.1);
+
+  rect(11, 2, 0.1, 0.1);
+
+  rect(12, 2, 0.1, 0.1);
+
+  rect(6, 3, 0.1, 0.1);
+
+  rect(7, 3, 0.1, 0.1);
+
+  rect(8, 3, 0.1, 0.1);
+
+  rect(9, 3, 0.1, 0.1);
+
+  rect(10, 3, 0.1, 0.1);
+
+  rect(11, 3, 0.1, 0.1);
+
+  rect(12, 3, 0.1, 0.1);
+
+  rect(13, 3, 0.1, 0.1);
+
+  rect(5, 4, 0.1, 0.1);
+
+  rect(6, 4, 0.1, 0.1);
+
+  rect(7, 4, 0.1, 0.1);
+
+  rect(8, 4, 0.1, 0.1);
+
+  rect(9, 4, 0.1, 0.1);
+
+  rect(10, 4, 0.1, 0.1);
+
+  rect(11, 4, 0.1, 0.1);
+
+  rect(12, 4, 0.1, 0.1);
+
+  rect(13, 4, 0.1, 0.1);
+
+  rect(14, 4, 0.1, 0.1);
   //Print a message to the console - to view using Chrome:
-  //View > Developer > Developer Tools > Console
+  //> Developer > Developer Tools > Console
   console.log("Searching...")
   noLoop();
 }

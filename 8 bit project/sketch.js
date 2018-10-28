@@ -10,16 +10,17 @@
 function setup() {
 
   createCanvas(200, 200);
+//background colour.
   background(255, 0, 255);
 }
-//top layer of rect
+//function draw canvas.
 function draw() {
-
+//rectangle strokes
   stroke(0, 0);
 
 
 
-  //1st line
+  //1st line hair
   fill("black");
   rect(60, 10, 10, 10);
   rect(70, 10, 10, 10);
@@ -32,83 +33,102 @@ function draw() {
 
 
 
-  //2nd line
-
-
+  //2nd line hair, eyes.
   fill("black");
   rect(50, 20, 10, 10);
+
   fill("white");
   rect(60, 20, 10, 10);
   rect(70, 20, 10, 10);
   rect(80, 20, 10, 10);
+
   fill("black");
   rect(90, 20, 10, 10);
   rect(100, 20, 10, 10);
+
   fill("white");
   rect(110, 20, 10, 10)
   rect(120, 20, 10, 10);
+
   fill("white");
   rect(130, 20, 10, 10);
+
   fill("black");
   rect(140, 20, 10, 10);
 
 
 
 
-  //3rd line
+  //3rd line hair, eyes, ear.
   fill("pink");
   rect(40, 30, 10, 10);
+
   fill("black");
   rect(50, 30, 10, 10);
+
   fill("white");
   rect(60, 30, 10, 10);
+
   fill("brown");
   rect(70, 30, 10, 10);
+
   fill("white");
   rect(80, 30, 10, 10);
+
   fill("pink");
   rect(90, 30, 10, 10);
   rect(100, 30, 10, 10);
+
   fill("white");
   rect(110, 30, 10, 10);
+
   fill("brown");
   rect(120, 30, 10, 10);
+
   fill("white");
   rect(130, 30, 10, 10);
+
   fill("black");
   rect(140, 30, 10, 10);
+
   fill("pink");
   rect(150, 30, 10, 10);
 
 
-  //4th line
+  //4th line beard, ears
   rect(40, 40, 10, 10);
+
   fill("black");
   rect(50, 40, 10, 10);
   rect(60, 40, 10, 10);
   rect(70, 40, 10, 10);
+
   fill("pink");
   rect(80, 40, 10, 10);
   rect(90, 40, 10, 10);
   rect(100, 40, 10, 10);
   rect(110, 40, 10, 10);
+
   fill("black");
   rect(120, 40, 10, 10);
   rect(130, 40, 10, 10);
   rect(140, 40, 10, 10);
+
   fill("pink");
   rect(150, 40, 10, 10);
 
-  //5th line
+  //5th line beard, ears
   fill("black");
   rect(40, 50, 10, 10);
   rect(50, 50, 10, 10);
   rect(60, 50, 10, 10);
   rect(70, 50, 10, 10);
   rect(80, 50, 10, 10);
+
   fill("pink");
   rect(90, 50, 10, 10);
   rect(100, 50, 10, 10);
+
   fill("black");
   rect(110, 50, 10, 10);
   rect(120, 50, 10, 10);

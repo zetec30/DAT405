@@ -21,6 +21,7 @@ function draw() {
 
 
   //1st line hair
+  //fill black for hair
   fill("black");
   rect(60, 10, 10, 10);
   rect(70, 10, 10, 10);
@@ -34,6 +35,7 @@ function draw() {
 
 
   //2nd line hair, eyes.
+  //fill black for hair and beard, shoes.
   fill("black");
   rect(50, 20, 10, 10);
 
@@ -45,7 +47,7 @@ function draw() {
   fill("black");
   rect(90, 20, 10, 10);
   rect(100, 20, 10, 10);
-
+//fill white for eyes
   fill("white");
   rect(110, 20, 10, 10)
   rect(120, 20, 10, 10);
@@ -60,6 +62,7 @@ function draw() {
 
 
   //3rd line hair, eyes, ear.
+  //fill pink for skin, ears, nose, neck
   fill("pink");
   rect(40, 30, 10, 10);
 
@@ -68,7 +71,7 @@ function draw() {
 
   fill("white");
   rect(60, 30, 10, 10);
-
+//fill brown for pupils, mole
   fill("brown");
   rect(70, 30, 10, 10);
 
@@ -155,7 +158,7 @@ function draw() {
   //7th line lips, beard, teeth.
   rect(60, 70, 10, 10);
   rect(70, 70, 10, 10);
-
+//fill red for lips.
   fill("red");
   rect(80, 70, 10, 10);
 
@@ -263,6 +266,7 @@ function draw() {
 
 
   //15th line start of trousers
+  //fill blue for trousers
   fill("blue");
   rect(70, 150, 10, 10);
   rect(80, 150, 10, 10);

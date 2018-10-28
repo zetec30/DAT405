@@ -1,10 +1,10 @@
-//https://github.com/stavrosdidakis/DAT-GAD-405_2017
+//https://github.com/zetec30/DAT405.git
 //https://p5js.org
 
 //DAT405 / GAD405
-//00_Template
-//The purpose of this sketch is to provide a basic template
-//for P5.js projects
+//8 bit project Stav 8bit
+//The purpose of this sketch is to show a drawing in rectangles
+//of an appearance 8bit character
 
 //Initialization function
 function setup() {

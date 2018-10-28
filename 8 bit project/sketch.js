@@ -152,14 +152,20 @@ function draw() {
   fill("black");
   rect(140, 60, 10, 10);
 
-  //7th line lips, beard
+  //7th line lips, beard, teeth.
   rect(60, 70, 10, 10);
   rect(70, 70, 10, 10);
 
   fill("red");
   rect(80, 70, 10, 10);
+
+  fill("white");
   rect(90, 70, 10, 10);
+
+  fill("red");
   rect(100, 70, 10, 10);
+
+  fill("white");
   rect(110, 70, 10, 10);
 
   fill("black");
@@ -290,7 +296,7 @@ function draw() {
   rect(110, 180, 10, 10);
   rect(120, 180, 10, 10);
   rect(130, 180, 10, 10);
-  
+
   console.log("Searching...")
   noLoop();
 }

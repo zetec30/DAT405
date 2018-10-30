@@ -13,6 +13,8 @@ function draw() {
 fill(255, 200, 170);
 for (let x = 0; x < 10; x++) {
 
+rect(size*x, height/500, size, size);
 rect(size*x, height/2, size, size);
+rect(size*x, height/4, size, size);
 }
 }

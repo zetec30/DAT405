@@ -10,9 +10,9 @@ function setup() {
 
 function draw() {
 
-fill(255,200,170);
-for (let x = 0, x < 10, x++){
+fill(255, 200, 170);
+for (let x = 0; x < 10; x++) {
 
-rect(size * x, height/2, size, size);
+rect(size*x, height/2, size, size);
 }
 }

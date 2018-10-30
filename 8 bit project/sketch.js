@@ -16,7 +16,7 @@ function setup() {
 //function draw canvas.
 function draw() {
 //rectangle strokes
-  stroke(0, 0);
+stroke(0,0);
 
 
 

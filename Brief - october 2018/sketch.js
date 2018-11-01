@@ -5,7 +5,6 @@ var leg0;
 
 function preload() {
 leg0 = loadImage("images/leg.png");
-
 }
 
 
@@ -14,21 +13,28 @@ function setup() {
 }
 
 function draw() {
+
  frameRate(20);
 
   background('grey');
 
-
-
-
+  
   push();
   translate(width*0.5, height*0.5);
   rotate(frameCount / 40.0);
+
   fill(random(255), random(255), random(255));
   ellipse(0, 0, 100, 100);
+
   fill('red');
   ellipse(0, 0, 50, 50);
-  image(leg0, 0, 0);
+
+  fill(random(255), random(255), random(255));
+  ellipse(0, 0, 30, 30);
+
+  fill('black');
+  ellipse(-100, 100, 40, 40);
+  image(leg0,);
 }
 
 

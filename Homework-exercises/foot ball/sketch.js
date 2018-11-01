@@ -1,15 +1,17 @@
 
 var leg0;
-
-
+var soundFile;
 
 function preload() {
 leg0 = loadImage("images/leg.png");
+soundFormats('mp3', 'ogg');
+  soundFile = loadSound('sound/Benny-hill-theme.mp3');
 }
 
 
 function setup() {
   createCanvas(594, 841);
+
 }
 
 function draw() {
@@ -18,7 +20,8 @@ function draw() {
 
   background('grey');
 
-  
+
+
   push();
   translate(width*0.5, height*0.5);
   rotate(frameCount / 40.0);
@@ -35,6 +38,8 @@ function draw() {
   fill('black');
   ellipse(-100, 100, 40, 40);
   image(leg0,);
+
+
 }
 
 
@@ -57,4 +62,6 @@ function star(x, y, radius1, radius2, npoints) {
     vertex(sx, sy);
   }
   endShape(CLOSE);
+
+
 }

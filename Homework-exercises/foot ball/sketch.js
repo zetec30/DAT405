@@ -1,24 +1,32 @@
 
 var leg0;
-var soundFile;
+
 
 function preload() {
+
 leg0 = loadImage("images/leg.png");
-soundFormats('mp3', 'ogg');
-  soundFile = loadSound('sound/Benny-hill-theme.mp3');
+
 }
 
 
 function setup() {
+
   createCanvas(594, 841);
+  strokeWeight(2);
 
 }
 
+
+
+
+
+
+
 function draw() {
 
- frameRate(20);
+ frameRate(30);
 
-  background('grey');
+  background('lightgrey');
 
 
 
@@ -32,12 +40,13 @@ function draw() {
   fill('red');
   ellipse(0, 0, 50, 50);
 
-  fill(random(255), random(255), random(255));
+  fill('white');
   ellipse(0, 0, 30, 30);
 
-  fill('black');
+  fill('blue');
+  stroke('white');
   ellipse(-100, 100, 40, 40);
-  image(leg0,);
+  image(leg0);
 
 
 }

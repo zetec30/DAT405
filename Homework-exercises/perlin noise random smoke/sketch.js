@@ -1,19 +1,15 @@
 var t;
 var cnv;
-var computer1;
 
 
 function setup() {
-computer1 = loadSound('Audio/beverly_computer1.wav');
-cnv = createCanvas(594, 841);
-  stroke(0, 20);
+var crv = createCanvas(594, 841);
+  stroke(0, 18);
   noFill();
   t = 0;
 }
 
 function draw() {
-
-beginShape();
 
   var x1 = width * noise(t + 15);
   var x2 = width * noise(t + 25);
@@ -26,21 +22,7 @@ beginShape();
 
   bezier(x1, y1, x2, y2, x3, y3, x4, y4);
 
-  bezier(x2, y2, y1, x1, y4, x3, y3, x4);
-
   t += 0.005;
 
 
-
-endShape();
-
-}
-function mousePressed() {
-  if ( computer1.isPlaying() ) { // .isPlaying() returns a boolean
-    computer1.stop();
-    background(255,0,0);
-  } else {
-    computer1.play();
-    background(0,255,0);
-  }
 }

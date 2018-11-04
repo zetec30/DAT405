@@ -1,20 +1,20 @@
-var t;
-var cnv;
-var computer1;
+var t;//noise variable.
+
 
 
 function setup() {
-computer1 = loadSound('Audio/beverly_computer1.wav');
-cnv = createCanvas(594, 841);
+  //song = loadSound('Audio/boing_x.wav');
+  createCanvas(594, 841);
   stroke(0, 20);
   noFill();
+
   t = 0;
 }
-
+//draw area.
 function draw() {
-
+//begins shape
 beginShape();
-
+//coordinates by position, X, Y.
   var x1 = width * noise(t + 15);
   var x2 = width * noise(t + 25);
   var x3 = width * noise(t + 35);
@@ -31,16 +31,18 @@ beginShape();
   t += 0.005;
 
 
-
+//ends shape.
 endShape();
 
 }
+
+//if mouse is pressed check condition if computer 1 is playing then stop. Else computer 1 play sound and randomize colour.
+
 function mousePressed() {
-  if ( computer1.isPlaying() ) { // .isPlaying() returns a boolean
-    computer1.stop();
-    background(255,0,0);
+if ( t == mousePressed ){
+  fill(random(255), random(255), random(255));
   } else {
-    computer1.play();
-    background(0,255,0);
+
+  fill(random(255), random(255), random(255));
   }
 }

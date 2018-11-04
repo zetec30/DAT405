@@ -5,7 +5,7 @@ let t1;
 function setup() {
   //song = loadSound('Audio/boing_x.wav');
   createCanvas(841, 594);
-  canvas.style = "position: absolute; top: 250px; left: 400px; border:5px solid grey"
+  canvas.style = "position: absolute; top: 250px; left: 400px; border:5px solid grey";
   stroke(0, 20);
   noFill();
   t = 0;
@@ -58,5 +58,6 @@ if ( t == mousePressed ){
 
   fill(random(255), random(255), random(255));
   }
+
 
 }

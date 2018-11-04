@@ -21,5 +21,12 @@ function draw() {
 
   ellipse(x, y, 40, 40);
 
+  if (mouseIsPressed) {
+      x(50, 50, 50, 50);
+    } else {
+      rect(25, 25, 50, 50);
+    }
+
+    print(mouseIsPressed);
 
 }

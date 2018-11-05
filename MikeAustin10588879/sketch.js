@@ -8,13 +8,15 @@ function setup() {
   //gives canvas center position.
   canvas.style = "position: absolute; top: 250px; left: 400px; border:5px solid grey";
   //stroke.
-  stroke(0, 10);
+  stroke(0, 3);
+
+
   //no fill.
   noFill();
   // variable for t..
   t = 0;
   // variable for t1..
-  t1 = 100;
+  t1 = 0;
 }
 //draw area.
 function draw() {
@@ -23,7 +25,7 @@ function draw() {
 //begins shape
 beginShape();
 //coordinates by position, X, Y. noise random.
-  let x1 = width * noise(t + 15);
+  let x1 = width * noise(t + 10);
   let x2 = width * noise(t + 25);
   let x3 = width * noise(t + 35);
   let x4 = width * noise(t + 45);
@@ -48,20 +50,21 @@ beginShape();
 
 //ellipse,, noise motion/R, G, B.. random colours at coordinates.
   let x = width * noise(t1);
-  let y = height * noise(t1 + 20);
+  let y = height * noise(t1 + 50);
   let r = 255 * noise(t1 + 40);
   let g = 255 * noise(t1 + 60);
   let b = 255 * noise(t1 + 80);
 //ellipse no stroke..
-  noStroke();
+
   //elllipse fill variables from above.
-  fill(r, g, b);
+
+stroke(r, g, b,);
   // ellipse, with x, y variables from above.
-  ellipse(x, y, 50, 50);
+rect(x, y, 100, 100);
 
 //speed at which both t and t1 move.
-  t += 0.004;
-  t1 += 0.004;
+  t += 0.002;
+  t1 += 0.003;
 
 //ends shape.
 endShape();
@@ -73,10 +76,11 @@ endShape();
 function mousePressed() {
 if ( t == mousePressed ){
   stroke(random(255), random(255), random(255));
-  redraw();
+
   } else {
 
   stroke(random(255), random(255), random(255));
+
   }
 
 

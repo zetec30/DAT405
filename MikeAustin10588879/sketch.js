@@ -9,7 +9,7 @@ function setup() {
   stroke(0, 20);
   noFill();
   t = 0;
-  t1 = 90;
+  t1 = 100;
 }
 //draw area.
 function draw() {
@@ -38,11 +38,11 @@ beginShape();
   let b = 255 * noise(t1 + 20);
 
   noStroke();
-  fill(r, g, b);
+  stroke(r, g, b);
   ellipse(x, y, 50, 50);
 
-  t += 0.005;
-  t1 = t + 0.01;
+  t += 0.004;
+  t1 += 0.004;
 
 //ends shape.
 endShape();
@@ -53,10 +53,10 @@ endShape();
 
 function mousePressed() {
 if ( t == mousePressed ){
-  fill(random(255), random(255), random(255));
+  stroke(random(255), random(255), random(255));
   } else {
 
-  fill(random(255), random(255), random(255));
+  stroke(random(255), random(255), random(255));
   }
 
 

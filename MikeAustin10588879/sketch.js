@@ -1,14 +1,19 @@
-let t;//noise variable.
-let t1;
+let t;//noise variable t.
+let t1;//noise variable t1.
 
 
 function setup() {
-  //song = loadSound('Audio/boing_x.wav');
+  //creates a canvas.
   createCanvas(841, 594);
+  //gives canvas center position.
   canvas.style = "position: absolute; top: 250px; left: 400px; border:5px solid grey";
-  stroke(0, 20);
+  //stroke.
+  stroke(0, 10);
+  //no fill.
   noFill();
+  // variable for t..
   t = 0;
+  // variable for t1..
   t1 = 100;
 }
 //draw area.
@@ -26,21 +31,35 @@ beginShape();
   let y2 = height * noise(t + 65);
   let y3 = height * noise(t + 75);
   let y4 = height * noise(t + 85);
-
+//coordinates for v, w noise random,second bezier.
+  let v1 = width * noise(t + 50);
+  let v2 = width * noise(t + 70);
+  let v3 = width * noise(t + 90);
+  let v4 = width * noise(t + 110);
+  let w1 = height * noise(t + 130);
+  let w2 = height * noise(t + 150);
+  let w3 = height * noise(t + 170);
+  let w4 = height * noise(t + 190);
+//bezier coordinates 1
   bezier(x1, y1, x2, y2, x3, y3, x4, y4);
+//bezier coordinates 2
+  bezier(v2, w2, w1, v1, w4, v3, w3, v4);
 
-  bezier(x2, y2, y1, x1, y4, x3, y3, x4);
 
+//ellipse,, noise motion/R, G, B.. random colours at coordinates.
   let x = width * noise(t1);
-  let y = height * noise(t1 + 5);
-  let r = 255 * noise(t1 + 10);
-  let g = 255 * noise(t1 + 15);
-  let b = 255 * noise(t1 + 20);
-
+  let y = height * noise(t1 + 20);
+  let r = 255 * noise(t1 + 40);
+  let g = 255 * noise(t1 + 60);
+  let b = 255 * noise(t1 + 80);
+//ellipse no stroke..
   noStroke();
-  stroke(r, g, b);
+  //elllipse fill variables from above.
+  fill(r, g, b);
+  // ellipse, with x, y variables from above.
   ellipse(x, y, 50, 50);
 
+//speed at which both t and t1 move.
   t += 0.004;
   t1 += 0.004;
 
@@ -50,7 +69,7 @@ endShape();
 }
 
 
-
+//if mouse is pressed variable t changes stroke colour!
 function mousePressed() {
 if ( t == mousePressed ){
   stroke(random(255), random(255), random(255));

@@ -1,74 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style type="text/css">
+<head>
+  <style type="text/css">
 
 
-    body{
+  body{
 
     background-color: whitesmoke;
 
 
 
-    }
+  }
 
-    h2{
-      font-family: fantasy;
-      text-align: center;
-      color: grey;
+  h2{
+    font-family: fantasy;
+    text-align: center;
+    color: grey;
 
-    }
-    h1{
+  }
 
-      text-align: center;
-      color: grey;
-      font-family: fantasy;
+  h1{
 
-    }
+    text-align: center;
+    color: grey;
+    font-family: fantasy;
 
-
-
-
-   h3{
-     text-align: justify;
-     font-family: fantasy;
-     color: grey;
-   }
-
-
-    </style>
-    <meta charset="UTF-8">
-
-
-    <title>MikeAustin 10588879</title>
-
-
-    <script src="libraries/p5.js" type="text/javascript"></script>
-    <script src="libraries/p5.dom.js" type="text/javascript"></script>
-    <script src="libraries/p5.sound.js" type="text/javascript"></script>
-    <script src="sketch.js" type="text/javascript"></script>
-    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
-  </head>
-
-
-  <body bgcolor="#e6e6e6">
+  }
 
 
 
-<br><br>
+
+  h3{
+    margin-left: 100px;
+    font-family: fantasy;
+    color: grey;
+  }
+
+  button{
+
+    border-radius: 10%;
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    padding: 20px 70px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: inherit;
+    font-family: sans-serif;
+    margin-right: 70px;
+    cursor: crosshair;
+  }
+
+  button:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  audio{
+    margin-left: 50px;
+  }
 
 
-<h2>WONDERING COLOURS</h2>
+
+  </style>
+  <meta charset="UTF-8">
 
 
-<h1>PRESS THE PATTERN TO CHANGE COLOUR!!</h1>
-<h3>-----MUSIC CONTROLS------</h3>
-<br>
-
-<audio id="audio1" controls autoplay loop>
-<source src="Audio/Mid-Air_Machine_-_Abnormal_Transistor.mp3" type="audio/ogg">
-
-</audio>
+  <title>MikeAustin 10588879</title>
 
 
-</html>
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+  <script src="sketch.js" type="text/javascript"></script>
+  <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+</head>
+
+
+<body bgcolor="#e6e6e6">
+
+
+
+  <br><br>
+
+
+  <h2>WONDERING COLOURS</h2>
+
+
+  <h1>PRESS THE PATTERN TO CHANGE COLOUR!!</h1>
+
+  <h3>MUSIC CONTROLS</h3>
+
+  <br>
+  <button type="button" id="butt1" style="float: right" onclick="refreshPage()">REFRESH PAGE</button>
+
+
+  <audio id="audio1" controls autoplay loop>
+
+    <source src="Audio/Mid-Air_Machine_-_Abnormal_Transistor.mp3" type="audio/ogg">
+
+    </audio>
+
+
+    </html>

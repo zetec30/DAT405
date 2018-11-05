@@ -1,6 +1,6 @@
 let t;//noise variable t.
 let t1;//noise variable t1.
-
+let butt1;
 
 function setup() {
   //creates a canvas.
@@ -73,10 +73,14 @@ endShape();
 function mousePressed() {
 if ( t == mousePressed ){
   stroke(random(255), random(255), random(255));
+  redraw();
   } else {
 
   stroke(random(255), random(255), random(255));
   }
 
 
+}
+function refreshPage(){
+    window.location.reload();
 }

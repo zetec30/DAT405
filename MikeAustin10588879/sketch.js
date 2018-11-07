@@ -1,14 +1,13 @@
 let t;//noise variable t.
 let t1;//noise variable t1.
-let butt1;
 
 function setup() {
   //creates a canvas.
   createCanvas(841, 594);
   //gives canvas center position.
-  canvas.style = "position: absolute; top: 250px; left: 400px; border:5px solid grey";
-  //stroke.
-  stroke(0, 3);
+  canvas.style = "position: absolute; top: 230px; left: 400px; border:5px solid grey";
+
+stroke(0, 3);
 
 
   //no fill.
@@ -20,10 +19,14 @@ function setup() {
 }
 //draw area.
 function draw() {
-
+  for (let x = 0; x < width; x++){
+    stroke(2);
+    point(x, random(height));
+  }
 
 //begins shape
 beginShape();
+
 //coordinates by position, X, Y. noise random.
   let x1 = width * noise(t + 10);
   let x2 = width * noise(t + 25);
@@ -83,8 +86,8 @@ if ( t == mousePressed ){
 
   }
 
-
 }
+
 function refreshPage(){
     window.location.reload();
 }

@@ -17,11 +17,12 @@ function setup() {
 
 function draw() {
   //Create a new random number for every frame (0 to 200 pixels)
-  size = random(200);
+  size = random(100);
   //Create a new random number for every frame (0 to 800 pixels)
-  size2 = random(300);
+  size2 = random(200);
   //fill variable
   f = fill(random(255), 0, random(255), random(255));
+
 
   //Call the customShape function
   customShape();

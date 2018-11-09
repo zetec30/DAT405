@@ -19,7 +19,7 @@ function draw() {
   //Create a new random number for every frame (0 to 200 pixels)
   size = random(100);
   //Create a new random number for every frame (0 to 800 pixels)
-  size2 = random(200);
+  size2 = random(150);
   //fill variable
   f = fill(random(255), 0, random(255), random(255));
 
@@ -31,7 +31,7 @@ function draw() {
 //When the function is called, it will draw a shape with random position and color
 function customShape(){
 
-  f;
+
   e;
   r;
   b;
@@ -39,25 +39,27 @@ function customShape(){
 
 
   if (keyCode === UP_ARROW){
-
-  e = ellipse(random(300), random(300), size, size);
+ stroke(20);
+  e = ellipse(random(300), random(300), size2, 200 );
 
   }else if
 
   (keyCode === DOWN_ARROW){
 
-    r = rect(random(300), random(300), size, size,);
+    fill(random(255), random(255), random(255));
+    r = rect(random(300), random(300), size, size, 150, 20/2);
 
   }
     //if key pressed is equal to left arrow, then..
   if (keyCode === LEFT_ARROW){
 
     //Random text....
-    b = text(random(300), random(300), size2, size2,);
+    fill(random(255), random(255), random(255));
+    b = triangle(random(300), random(300), size2, size2, 40, 40);
 
   }else if (keyCode === RIGHT_ARROW) {
 
-   k = background(random(255), random(255), random(255));
+   k = rect(random(300), random(300), 50, 50 * 40, 20/2);
 
 
 

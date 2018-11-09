@@ -11,26 +11,26 @@ function draw() {
   c1 = lerpColor(from, to, .33);
   c2 = lerpColor(from, to, .66);
   for (var i = 0; i < 15; i++) {
-      fill(random(255), random(255), random(255));
+    fill(random(255), random(255), random(255));
     triangle(random(-40, 220), random(height),
-         random(-40, 220), random(height),
-         random(-40, 220), random(height),
-        random(-40, 220), random(height));
-      fill(random(255), random(255), random(255));;
+    random(-40, 220), random(height),
+    random(-40, 220), random(height),
+    random(-40, 220), random(height));
+    fill(random(255), random(255), random(255));;
     rect(random(140, 380), random(height),
-         random(140, 380), random(height),
-         random(140, 380), random(height),
-         random(140, 380), random(height));
-      fill(random(255), random(255), random(255));
+    random(140, 380), random(height),
+    random(140, 380), random(height),
+    random(140, 380), random(height));
+    fill(random(255), random(255), random(255));
     ellipse(random(320, 580), random(height),
-         random(320, 580), random(height),
-         random(320, 580), random(height),
-         random(320, 580), random(height));
-      fill(random(255), random(255), random(255));
+    random(320, 580), random(height),
+    random(320, 580), random(height),
+    random(320, 580), random(height));
+    fill(random(255), random(255), random(255));
     rect(random(500, 760), random(height),
-         random(500, 760), random(height),
-         random(500, 760), random(height),
-         random(500, 760), random(height));
+    random(500, 760), random(height),
+    random(500, 760), random(height),
+    random(500, 760), random(height));
   }
   frameRate(10);
 }

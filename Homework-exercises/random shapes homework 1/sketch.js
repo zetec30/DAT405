@@ -9,13 +9,14 @@ let can;
 function setup() {
   can = createCanvas(300, 200);
   canvas.style = "position: absolute; top: 400px; left: 550px; border:5px solid grey";
-  background('whitesmoke');
+  background(255);
   frameRate(6);
   noStroke();
 
 }
 
 function draw() {
+
   //Create a new random number for every frame (0 to 200 pixels)
   size = random(100);
   //Create a new random number for every frame (0 to 800 pixels)
@@ -45,20 +46,20 @@ function customShape(){
   }else if
 
   (keyCode === DOWN_ARROW){
-
-    fill(random(255), random(255), random(255));
+    stroke(2);
+    fill(random(255), random(255),0, random(255));
     r = rect(random(300), random(300), size, size, 150, 20/2);
 
   }
     //if key pressed is equal to left arrow, then..
   if (keyCode === LEFT_ARROW){
 
-    //Random text....
+    stroke(0.6);
     fill(random(255), random(255), random(255));
     b = triangle(random(300), random(300), size2, size2, 40, 40);
 
   }else if (keyCode === RIGHT_ARROW) {
-
+    stroke(0, 1);
    k = rect(random(300), random(300), 50, 50 * 40, 20/2);
 
 

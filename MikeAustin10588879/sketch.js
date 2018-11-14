@@ -23,7 +23,6 @@ function draw() {
     stroke(2);
     point(x, random(height));
   }
-
 //begins shape
 beginShape();
 

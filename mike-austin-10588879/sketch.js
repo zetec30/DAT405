@@ -2,7 +2,7 @@ let caudio;
 let can;
 let x;
 let t, t1;
-
+let analyzer;
 
 
 
@@ -16,6 +16,7 @@ function setup() {
   can.position(w, h);
   can.style("border:5px solid grey");
   caudio = createAudio('Audio/dubstep.mp3');
+
   background(0);
 
 
@@ -39,8 +40,6 @@ function draw(){
 
 
 
-
-
   //coordinates by position, X1-4, Y1-4. noise random.
   let x1 = width * noise(t + 0);
   let x2 = width * noise(t + 15);
@@ -57,9 +56,6 @@ function draw(){
   let r = 255 * noise(t1 + 40);
   let g = 255 * noise(t1 + 60);
   let b = 255 * noise(t1 + 80);
-  //ellipse no stroke..
-
-  //elllipse fill variables from above.
 
 
 
@@ -79,7 +75,6 @@ function draw(){
     point(x4, y4, 10, 10);
     pop();
   }
-
 
   for (let y = 0; y < width; y+=10){
     push();

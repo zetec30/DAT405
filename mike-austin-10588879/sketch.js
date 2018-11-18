@@ -25,20 +25,27 @@ can.style("border:5px solid grey");
 //VARIABLE TO ADD AUDIO, FOUND THIS PART THE HARDEST.
 caudio = createAudio('Audio/dubstep.mp3');
 kaudio = createAudio('Audio/MidAir.mp3')
-//button setup position, creation, and paramater
+
+
+
+//button setup position, creation, and function define
 button = createButton('Dubstep');
 button.position(0, 100);
 button.mousePressed(clicked);
 
-//button2 refreshes page.
+//button2 refreshes page, defines position and function.
 button2 = createButton('Refresh Page');
 button2.position(0, 440);
 button2.mousePressed(refreshPage);
 
+
+//stops music, defines poition and function
 button3 = createButton('Stop Music');
 button3.position(0, 300);
 button3.mousePressed(stopMusic);
 
+
+//button defined for midair mp3, position and defines the function
 button4 = createButton('MidAir');
 button4.position(0, 200);
 button4.mousePressed(midairplay);
@@ -97,8 +104,8 @@ t1 += 0.01;
 
 
 
-// //LOOP 1 Y FROM THE LOOP INTO coordinates, ADDED +=20 AND RANDOM ROTATE OF 90, colour change g, r, b.
-for (let y = 0; y < width; y+=10){
+// //LOOP 1 Y FROM THE LOOP INTO coordinates, ADDED +=70 AND RANDOM ROTATE OF 45, colour change g, r, b.
+for (let y = 0; y < width; y+=70){
     push();
       translate(width/2, height/2);
         rotate(random(45));
@@ -113,7 +120,7 @@ for (let y = 0; y < width; y+=10){
   }
 //LOOP 2 X VARIABLE WITH THE ADDED RGB VARIABLES, TRANSLATE FOR CENTER, PUSH/POP TO MAKE THE SHAPE MOVE
 //USED THE NOISE FUNCTION X4-Y4 FROM MY NOISE SETUP. ADDED RANDOM ROTATE TO 45. x from loop in size.
-for (let x = 0; x < width; x+=10){
+for (let x = 0; x < width; x+=9){
   push()
     translate(width/2, height/2);
       rotate(random(45));
@@ -129,13 +136,13 @@ for (let x = 0; x < width; x+=10){
 
 
 
-//loop 3 i variable using lines, colour change b, g, r. i of loop in position x, y.
+//loop 3 i variable using lines, colour change b, g, r. i of loop in position x, y. loop of 200
  for (let i = 0; i < width; i+=200){
  push()
    translate(width/2, height/2);
      rotate(random(45));
        stroke(b, g, r);
-         strokeWeight(0.2);
+         strokeWeight(0.1);
            line(50, 2, i, 2 );
              pop();
 
@@ -144,14 +151,14 @@ for (let x = 0; x < width; x+=10){
 }
 
 
-// click button to play music
+// click button to play music plays dubstep stops midair
 function clicked(){
 
   caudio.play();
   kaudio.stop();
 }
 
-
+//function plays 2nd music mp3 and stops first mp3
 function midairplay(){
 
   kaudio.play();
@@ -159,13 +166,14 @@ function midairplay(){
 
 }
 
-
+//function of button to refresh page
 function refreshPage(){
-
+//reloads page
   window.location.reload();
 
 
 }
+//button function to stop music both caudio and kaudio
 function stopMusic(){
 
   caudio.stop();

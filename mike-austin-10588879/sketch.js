@@ -104,7 +104,7 @@ t1 += 0.01;
 
 
 
-// //LOOP 1 Y FROM THE LOOP INTO coordinates, ADDED +=70 AND RANDOM ROTATE OF 45, colour change g, r, b.
+// //LOOP 1 for the ellipse effect, Y FROM THE LOOP INTO coordinates, ADDED +=70 AND RANDOM ROTATE OF 45, colour change g, r, b.
 for (let y = 0; y < width; y+=70){
     push();
       translate(width/2, height/2);
@@ -118,7 +118,7 @@ for (let y = 0; y < width; y+=70){
 
 
   }
-//LOOP 2 X VARIABLE WITH THE ADDED RGB VARIABLES, TRANSLATE FOR CENTER, PUSH/POP TO MAKE THE SHAPE MOVE
+//LOOP 2 for the points X VARIABLE WITH THE ADDED RGB VARIABLES, TRANSLATE FOR CENTER, PUSH/POP TO MAKE THE SHAPE MOVE
 //USED THE NOISE FUNCTION X4-Y4 FROM MY NOISE SETUP. ADDED RANDOM ROTATE TO 45. x from loop in size.
 for (let x = 0; x < width; x+=9){
   push()
@@ -136,7 +136,7 @@ for (let x = 0; x < width; x+=9){
 
 
 
-//loop 3 i variable using lines, colour change b, g, r. i of loop in position x, y. loop of 200
+//loop 3 for the centeral lines i variable using lines, colour change b, g, r. i of loop in position x, y. loop of 200
  for (let i = 0; i < width; i+=200){
  push()
    translate(width/2, height/2);

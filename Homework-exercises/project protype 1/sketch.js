@@ -16,13 +16,11 @@ stroke(0, 3);
   t = 0;
   // variable for t1..
   t1 = 0;
+
 }
-//draw area.
-function draw() {
-  for (let x = 0; x < width; x++){
-    stroke(2);
-    point(x, random(height));
-  }
+function draw(){
+
+
 //begins shape
 beginShape();
 

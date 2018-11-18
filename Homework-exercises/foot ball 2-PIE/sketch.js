@@ -2,11 +2,7 @@
 var leg0;
 
 
-function preload() {
 
-leg0 = loadImage("images/leg.png");
-
-}
 
 
 function setup() {
@@ -14,6 +10,7 @@ function setup() {
   createCanvas(594, 841);
   strokeWeight(2);
 
+  leg0 = loadImage("images/leg.png");
 }
 
 

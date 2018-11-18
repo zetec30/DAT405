@@ -40,6 +40,8 @@ P5.js & Processing very interesting both very similar minus functions vs void, l
 
 this is definitely a language I'm interested in learning more.  
 
+Another thing I found is I had done the project several times over as each time I had done something I learned something new in class. This made me uneasy and felt I needed a bigger project..
+
 bibliography:
 
 P5.js website references https://p5js.org/

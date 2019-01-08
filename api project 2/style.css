@@ -1,0 +1,52 @@
+html, body {
+  background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+input {
+    color: #F03A47;
+    border: none;
+    font-weight: 900;
+    font-size: 58px;
+    border-bottom: 1px dotted #F03A47;
+    background-color: transparent;
+    /*width:auto;*/
+    min-width: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+
+}
+
+#city {
+  min-width: 1px;
+}
+
+button {
+    border: none;
+    color: #ef4823;
+    background-color: transparent;
+    padding: auto;
+    font-weight: 100;
+    font-size: 17px;
+/*     border-radius: 2px; */
+    cursor: pointer;
+    color: #ef4823;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    margin-top: 0px;
+}
+
+p {
+/*     text-align: center; */
+/*     padding: 10px 20px; */
+
+/*     display: inline-block; */
+/*     position: relative; */
+}
